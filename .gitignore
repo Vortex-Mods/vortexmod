@@ -1,0 +1,309 @@
+# 🚫 Vortex Mod Manager - Git Ignore Rules
+
+# ===================================
+# 🔐 SECURITY & CREDENTIALS
+# ===================================
+.internal/GITHUB_CREDENTIALS.md
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+.env
+.env.local
+.env.production
+.env.staging
+
+# ===================================
+# 🛠️ BUILD & COMPILATION
+# ===================================
+bin/
+obj/
+build/
+dist/
+out/
+target/
+*.exe
+*.dll
+*.pdb
+*.lib
+*.a
+*.so
+*.dylib
+
+# ===================================
+# 📦 PACKAGE MANAGERS
+# ===================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.env
+
+# .NET/NuGet
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ===================================
+# 🎮 GAME & MOD FILES
+# ===================================
+*.esp
+*.esm
+*.esl
+*.bsa
+*.ba2
+mods/
+downloads/
+profiles/
+games/
+*.7z
+*.zip
+*.rar
+
+# ===================================
+# 💻 IDE & EDITORS
+# ===================================
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vcxproj.filters
+*.vcxproj.user
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains
+.idea/
+*.sln.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# ===================================
+# 🖥️ OPERATING SYSTEMS
+# ===================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# Linux
+*~
+.nfs*
+
+# ===================================
+# 📊 LOGS & DEBUGGING
+# ===================================
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+debug.log
+error.log
+access.log
+combined.log
+
+# ===================================
+# 🧪 TESTING & COVERAGE
+# ===================================
+coverage/
+.nyc_output/
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+test-results/
+TestResults/
+
+# ===================================
+# 📱 MOBILE DEVELOPMENT
+# ===================================
+# React Native
+.expo/
+.expo-shared/
+
+# Flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# ===================================
+# ☁️ CLOUD & DEPLOYMENT
+# ===================================
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# ===================================
+# 📋 TEMPORARY & CACHE FILES
+# ===================================
+tmp/
+temp/
+.tmp/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+
+# ===================================
+# 📄 DOCUMENTATION BUILD
+# ===================================
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+
+# ===================================
+# 🔧 PROJECT SPECIFIC
+# ===================================
+# Vortex specific
+VortexSetup.exe
+VortexPortable/
+ModInstaller/
+GameConfigs/
+UserProfiles/
+
+# Installation files
+setup.exe
+installer.msi
+portable.zip
+
+# Configuration backups
+*.backup
+*.bak
+config.old
+
+# ===================================
+# 📊 ANALYTICS & METRICS
+# ===================================
+.awcache/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# ===================================
+# 🧹 SYSTEM GENERATED
+# ===================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+\#*#
+
+# ===================================
+# 📦 ARCHIVES & DOWNLOADS
+# ===================================
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.gz
+*.bz2
+*.xz
+*.deb
+*.rpm
+
+# ===================================
+# 🔍 SEARCH INDEXES
+# ===================================
+.vscode/search.cache
+.vs/search.cache
+
+# ===================================
+# 📱 MOBILE ARTIFACTS
+# ===================================
+*.apk
+*.ipa
+*.aab
+
+# ===================================
+# 🎨 DESIGN FILES
+# ===================================
+*.psd
+*.sketch
+*.fig
+*.xd
+
+# ===================================
+# 📺 MEDIA FILES (if not needed)
+# ===================================
+# *.mp4
+# *.avi
+# *.mov
+# *.wmv
+# *.flv
+# *.webm
+
+# ===================================
+# 📁 KEEP IMPORTANT EMPTY DIRS
+# ===================================
+!.gitkeep
+!.placeholder
+
+# ===================================
+# 🚨 NEVER IGNORE THESE
+# ===================================
+!README.md
+!LICENSE
+!CONTRIBUTING.md
+!SECURITY.md
+!CHANGELOG.md
+!CODE_OF_CONDUCT.md
+!.github/
+!docs/ 

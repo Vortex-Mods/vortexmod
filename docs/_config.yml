@@ -1,0 +1,204 @@
+# GitHub Pages Configuration for Vortex Mod Manager
+title: "Vortex Mod Manager - Offline Setup Assistant"
+description: "Professional offline deployment tool for Vortex Mod Manager - supports 100+ games including Skyrim, Fallout 4, Cyberpunk 2077, and The Witcher 3. No internet connection or Nexus Mods account required."
+
+# Site settings
+url: "https://vortex-mods.github.io"
+baseurl: "/vortexmod"
+repository: "Vortex-Mods/vortexmod"
+
+# SEO settings
+lang: "en-US"
+logo: "/assets/images/logo.png"
+author:
+  name: "Vortex-Mods Team"
+  email: "enterprise@vortex-mods.com"
+  twitter: "@VortexMods"
+
+# Social media
+social:
+  name: "Vortex Mod Manager"
+  links:
+    - "https://github.com/Vortex-Mods/vortexmod"
+    - "https://twitter.com/VortexMods"
+
+# GitHub Pages theme
+theme: minima
+remote_theme: pages-themes/cayman@v0.2.0
+
+# Plugins for SEO and functionality
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-relative-links
+
+# SEO plugin configuration
+jekyll-seo-tag:
+  image: "/assets/images/social-preview.png"
+  
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+# Highlighting
+highlighter: rouge
+
+# Include/Exclude files
+include:
+  - _pages
+  - "*.md"
+  - "*.html"
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - "*.gemspec"
+  - "*.gem"
+  - .internal/
+  - UNIVERSAL_SEO_TOOLKIT.md
+
+# Collections
+collections:
+  games:
+    output: true
+    permalink: /:collection/:name/
+  guides:
+    output: true
+    permalink: /:collection/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      image: "/assets/images/social-preview.png"
+  - scope:
+      path: "_games"
+    values:
+      layout: "game"
+  - scope:
+      path: "_guides"
+    values:
+      layout: "guide"
+
+# Navigation
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "Getting Started"
+    url: "/getting-started"
+  - title: "Games"
+    url: "/game-setup"
+  - title: "Troubleshooting"
+    url: "/troubleshooting"
+  - title: "FAQ"
+    url: "/faq"
+  - title: "Download"
+    url: "https://vortex-mods.github.io/.github/"
+
+# Footer links
+footer_links:
+  - title: "GitHub"
+    url: "https://github.com/Vortex-Mods/vortexmod"
+  - title: "Issues"
+    url: "https://github.com/Vortex-Mods/vortexmod/issues"
+  - title: "Discussions"
+    url: "https://github.com/Vortex-Mods/vortexmod/discussions"
+  - title: "License"
+    url: "/LICENSE"
+
+# Google Analytics (replace with your tracking ID)
+google_analytics: G-XXXXXXXXXX
+
+# Keywords for SEO
+keywords:
+  - vortex mod manager
+  - offline mod manager
+  - skyrim mod manager
+  - fallout 4 mod manager
+  - cyberpunk 2077 mods
+  - witcher 3 mods
+  - game mod organizer
+  - nexus mods offline
+  - mod deployment tool
+  - enterprise mod management
+  - airgapped mod installer
+  - LOOT load order
+  - mod conflict resolution
+  - gaming tools
+  - windows mod manager
+
+# Supported games for SEO
+supported_games:
+  - "The Elder Scrolls V: Skyrim"
+  - "Skyrim Special Edition"
+  - "Fallout 4"
+  - "Fallout: New Vegas"
+  - "Cyberpunk 2077"
+  - "The Witcher 3: Wild Hunt"
+  - "Baldur's Gate 3"
+  - "Starfield"
+  - "Elden Ring"
+  - "Dragon Age series"
+  - "Mass Effect series"
+  - "No Man's Sky"
+  - "Valheim"
+  - "Mount & Blade II: Bannerlord"
+
+# Features for marketing
+key_features:
+  - "100+ Game Support"
+  - "Offline Installation"
+  - "Advanced Mod Tools"
+  - "LOOT Integration"
+  - "Game Auto-Detection"
+  - "Enterprise Ready"
+  - "No Dependencies"
+  - "Portable Mode"
+
+# Contact information
+contact:
+  email: "enterprise@vortex-mods.com"
+  github: "https://github.com/Vortex-Mods/vortexmod"
+  support: "https://github.com/Vortex-Mods/vortexmod/issues"
+  discussions: "https://github.com/Vortex-Mods/vortexmod/discussions"
+
+# Version info
+version: "1.13.7"
+release_date: "2024-01-15"
+
+# Build settings
+incremental: true
+profile: false
+strict_front_matter: true
+
+# Sass settings
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development] 
